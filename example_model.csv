@@ -1,0 +1,25 @@
+Abbreviation,Description,Reaction,GPR,Lower bound,Upper bound,Objective,Subsystem,Notes,EC Number
+R_1_lf,R_1_lf,A[lf] -> B[lf],(G00001),0,1000,0,NA,NA,NA
+R_2_lf,R_2_lf,B[lf] -> C[lf],((G00001)AND((G00002)OR(G00003))),0,1000,0,NA,NA,NA
+R_3_lf,R_3_lf,C[lf] -> D[lf],(G00004),0,1000,0,NA,NA,NA
+R_1_st,R_1_st,A[st] -> B[st],(G00001),0,1000,0,NA,NA,NA
+R_2_st,R_2_st,B[st] -> C[st],((G00001)AND((G00002)OR(G00003))),0,1000,0,NA,NA,NA
+R_3_st,R_3_st,C[st] -> D[st],(G00004),0,1000,0,NA,NA,NA
+R_1_rt,R_1_rt,A[rt] -> B[lf],(G00001),0,1000,0,NA,NA,NA
+R_2_rt,R_2_rt,B[lf] -> C[rt],((G00001)AND((G00002)OR(G00003))),0,1000,0,NA,NA,NA
+R_3_rt,R_3_rt,C[rt] -> D[rt],(G00004),0,1000,0,NA,NA,NA
+Im_A_rt,Im_A_rt,-> A[rt],,0,1000,0,NA,NA,NA
+Ex_C_lf,Ex_C_lf,C[lf] ->,,0,1000,0,NA,NA,NA
+Ex_D_lf,Ex_D_lf,D[lf] - >,,0,1000,0,NA,NA,NA
+R_A_cplf,R_A_cplf,A[lf] <=> A[cp],,-1000,1000,0,NA,NA,NA
+R_A_cpst,R_A_cpst,A[st] <=> A[cp],,-1000,1000,0,NA,NA,NA
+R_A_cprt,R_A_cprt,A[rt] <=> A[cp],,-1000,1000,0,NA,NA,NA
+R_B_cplf,R_B_cplf,B[lf] <=> B[cp],,-1000,1000,0,NA,NA,NA
+R_B_cpst,R_B_cpst,B[st] <=> B[cp],,-1000,1000,0,NA,NA,NA
+R_B_cprt,R_B_cprt,B[rt] <=> B[cp],,-1000,1000,0,NA,NA,NA
+R_C_cplf,R_C_cplf,C[lf] <=> C[cp],,-1000,1000,0,NA,NA,NA
+R_C_cpst,R_C_cpst,C[st] <=> C[cp],,-1000,1000,0,NA,NA,NA
+R_C_cprt,R_C_cprt,C[rt] <=> C[cp],,-1000,1000,0,NA,NA,NA
+R_D_cplf,R_C_cplf,D[lf] <=> D[cp],,-1000,1000,0,NA,NA,NA
+R_D_cpst,R_C_cpst,D[st] <=> D[cp],,-1000,1000,0,NA,NA,NA
+R_D_cprt,R_C_cprt,D[rt] <=> D[cp],,-1000,1000,0,NA,NA,NA

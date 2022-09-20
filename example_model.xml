@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:fbc="http://www.sbml.org/sbml/level3/version1/fbc/version2" xmlns:groups="http://www.sbml.org/sbml/level3/version1/groups/version1" level="3" version="1" fbc:required="false" groups:required="false">
+  <model metaid="example_model.xls" id="COBRAModel" name="Model Exported from COBRA Toolbox" fbc:strict="true">
+    <listOfUnitDefinitions>
+      <unitDefinition id="mmol_per_gDW_per_hr">
+        <listOfUnits>
+          <unit kind="mole" exponent="1" scale="-3" multiplier="1"/>
+          <unit kind="gram" exponent="-1" scale="0" multiplier="1"/>
+          <unit kind="second" exponent="-1" scale="0" multiplier="3600"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment metaid="cp" id="cp" name="common_pool" constant="false"/>
+      <compartment metaid="lf" id="lf" name="Leaf" constant="false"/>
+      <compartment metaid="rt" id="rt" name="Root" constant="false"/>
+      <compartment metaid="st" id="st" name="Stem" constant="false"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="A__91__cp__93__" id="A__91__cp__93__" name="A[cp]" compartment="cp" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="A__91__lf__93__" id="A__91__lf__93__" name="A[lf]" compartment="lf" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="A__91__rt__93__" id="A__91__rt__93__" name="A[rt]" compartment="rt" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="A__91__st__93__" id="A__91__st__93__" name="A[st]" compartment="st" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="B__91__cp__93__" id="B__91__cp__93__" name="B[cp]" compartment="cp" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="B__91__lf__93__" id="B__91__lf__93__" name="B[lf]" compartment="lf" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="B__91__rt__93__" id="B__91__rt__93__" name="B[rt]" compartment="rt" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="B__91__st__93__" id="B__91__st__93__" name="B[st]" compartment="st" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="C__91__cp__93__" id="C__91__cp__93__" name="C[cp]" compartment="cp" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="C__91__lf__93__" id="C__91__lf__93__" name="C[lf]" compartment="lf" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="C__91__rt__93__" id="C__91__rt__93__" name="C[rt]" compartment="rt" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="C__91__st__93__" id="C__91__st__93__" name="C[st]" compartment="st" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="D__91__cp__93__" id="D__91__cp__93__" name="D[cp]" compartment="cp" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="D__91__lf__93__" id="D__91__lf__93__" name="D[lf]" compartment="lf" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="D__91__rt__93__" id="D__91__rt__93__" name="D[rt]" compartment="rt" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+      <species metaid="D__91__st__93__" id="D__91__st__93__" name="D[st]" compartment="st" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false" fbc:charge="0"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter sboTerm="SBO:0000626" id="FB1N1000" value="-1000" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="FB2N0" value="0" constant="true"/>
+      <parameter sboTerm="SBO:0000626" id="FB3N1000" value="1000" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction metaid="R_1_lf" id="R_1_lf" name="R_1_lf" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="A__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="B__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_G00001"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_2_lf" id="R_2_lf" name="R_2_lf" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="B__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_G00001"/>
+            <fbc:or>
+              <fbc:geneProductRef fbc:geneProduct="G_G00002"/>
+              <fbc:geneProductRef fbc:geneProduct="G_G00003"/>
+            </fbc:or>
+          </fbc:and>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_3_lf" id="R_3_lf" name="R_3_lf" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="C__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_G00004"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_1_st" id="R_1_st" name="R_1_st" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="A__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="B__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_G00001"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_2_st" id="R_2_st" name="R_2_st" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="B__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_G00001"/>
+            <fbc:or>
+              <fbc:geneProductRef fbc:geneProduct="G_G00002"/>
+              <fbc:geneProductRef fbc:geneProduct="G_G00003"/>
+            </fbc:or>
+          </fbc:and>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_3_st" id="R_3_st" name="R_3_st" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="C__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_G00004"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_1_rt" id="R_1_rt" name="R_1_rt" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="A__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="B__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_G00001"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_2_rt" id="R_2_rt" name="R_2_rt" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="B__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:and>
+            <fbc:geneProductRef fbc:geneProduct="G_G00001"/>
+            <fbc:or>
+              <fbc:geneProductRef fbc:geneProduct="G_G00002"/>
+              <fbc:geneProductRef fbc:geneProduct="G_G00003"/>
+            </fbc:or>
+          </fbc:and>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="R_3_rt" id="R_3_rt" name="R_3_rt" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="C__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <fbc:geneProductAssociation>
+          <fbc:geneProductRef fbc:geneProduct="G_G00004"/>
+        </fbc:geneProductAssociation>
+      </reaction>
+      <reaction metaid="Im_A_rt" id="Im_A_rt" name="Im_A_rt" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfProducts>
+          <speciesReference species="A__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="Ex_C_lf" id="Ex_C_lf" name="Ex_C_lf" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="C__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="Ex_D_lf" id="Ex_D_lf" name="Ex_D_lf" reversible="false" fast="false" fbc:lowerFluxBound="FB2N0" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="D__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+      </reaction>
+      <reaction metaid="R_A_cplf" id="R_A_cplf" name="R_A_cplf" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="A__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_A_cpst" id="R_A_cpst" name="R_A_cpst" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="A__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_A_cprt" id="R_A_cprt" name="R_A_cprt" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="A__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_B_cplf" id="R_B_cplf" name="R_B_cplf" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="B__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="B__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_B_cpst" id="R_B_cpst" name="R_B_cpst" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="B__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="B__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_B_cprt" id="R_B_cprt" name="R_B_cprt" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="B__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="B__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_C_cplf" id="R_C_cplf" name="R_C_cplf" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="C__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_C_cpst" id="R_C_cpst" name="R_C_cpst" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="C__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_C_cprt" id="R_C_cprt" name="R_C_cprt" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="C__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="C__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D_cplf" id="R_D_cplf" name="R_C_cplf" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="D__91__lf__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D_cpst" id="R_D_cpst" name="R_C_cpst" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="D__91__st__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction metaid="R_D_cprt" id="R_D_cprt" name="R_C_cprt" reversible="true" fast="false" fbc:lowerFluxBound="FB1N1000" fbc:upperFluxBound="FB3N1000">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p>ECNumbers:NA</p>
+            <p>NOTES: NA</p>
+          </body>
+        </notes>
+        <listOfReactants>
+          <speciesReference species="D__91__rt__93__" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D__91__cp__93__" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+    <fbc:listOfGeneProducts>
+      <fbc:geneProduct metaid="G_G00001" sboTerm="SBO:0000243" fbc:id="G_G00001" fbc:label="G00001"/>
+      <fbc:geneProduct metaid="G_G00002" sboTerm="SBO:0000243" fbc:id="G_G00002" fbc:label="G00002"/>
+      <fbc:geneProduct metaid="G_G00003" sboTerm="SBO:0000243" fbc:id="G_G00003" fbc:label="G00003"/>
+      <fbc:geneProduct metaid="G_G00004" sboTerm="SBO:0000243" fbc:id="G_G00004" fbc:label="G00004"/>
+    </fbc:listOfGeneProducts>
+    <groups:listOfGroups>
+      <groups:group sboTerm="SBO:0000633" groups:id="group1" groups:name="NA" groups:kind="partonomy">
+        <groups:listOfMembers>
+          <groups:member groups:idRef="R_1_lf"/>
+          <groups:member groups:idRef="R_2_lf"/>
+          <groups:member groups:idRef="R_3_lf"/>
+          <groups:member groups:idRef="R_1_st"/>
+          <groups:member groups:idRef="R_2_st"/>
+          <groups:member groups:idRef="R_3_st"/>
+          <groups:member groups:idRef="R_1_rt"/>
+          <groups:member groups:idRef="R_2_rt"/>
+          <groups:member groups:idRef="R_3_rt"/>
+          <groups:member groups:idRef="Im_A_rt"/>
+          <groups:member groups:idRef="Ex_C_lf"/>
+          <groups:member groups:idRef="Ex_D_lf"/>
+          <groups:member groups:idRef="R_A_cplf"/>
+          <groups:member groups:idRef="R_A_cpst"/>
+          <groups:member groups:idRef="R_A_cprt"/>
+          <groups:member groups:idRef="R_B_cplf"/>
+          <groups:member groups:idRef="R_B_cpst"/>
+          <groups:member groups:idRef="R_B_cprt"/>
+          <groups:member groups:idRef="R_C_cplf"/>
+          <groups:member groups:idRef="R_C_cpst"/>
+          <groups:member groups:idRef="R_C_cprt"/>
+          <groups:member groups:idRef="R_D_cplf"/>
+          <groups:member groups:idRef="R_D_cpst"/>
+          <groups:member groups:idRef="R_D_cprt"/>
+        </groups:listOfMembers>
+      </groups:group>
+    </groups:listOfGroups>
+  </model>
+</sbml>
